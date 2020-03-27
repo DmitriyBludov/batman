@@ -6,7 +6,9 @@
     <title>Бэтмен 2021 - страница о фильме></title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
@@ -30,13 +32,13 @@
                 <div class="movie-info">
                     <span class="tag">Фильм</span>
                     <span class="country">США, 2021 год</span>
-                    <a href="#" class="play">Смотреть трейлер</a>
+                    <a data-fancybox href="https://www.youtube.com/watch?v=Xo8i2ZDMlQg&" class="play animated pulse infinite">Смотреть трейлер</a>
                 </div>
                 <a href="#" class="more">Подробнее</a>
             </div>
             <div class="content">
                 <div class="short-info">
-                    <img src="./img/poster.jpg" alt="poster" class="poster">
+                    <img src="./img/poster.jpg" alt="poster" class="poster animated zoomInUp delay-2s">
                     <button class="button">Буду смотреть</button>
                     <h3 class="actors-title">В главных ролях:</h3>
                     <ul class="actors-list">
@@ -55,19 +57,19 @@
                 <!-- /.short-info -->
                 <div class="full-info">
                     <nav class="tabs">
-                        <a href="#" class="tabs-item tabs-item-active">Описание</a>
-                        <a href="#" class="tabs-item">Рецензии</a>
-                        <a href="#" class="tabs-item">Премьеры</a>
-                        <a href="#" class="tabs-item">Актеры</a>
-                        <a href="#" class="tabs-item">Награды</a>
-                        <a href="#" class="tabs-item">Факты</a>
-                        <a href="#" class="tabs-item">Сайты</a>
+                        <a href="#about" class="tabs-item tabs-item-active">Описание</a>
+                        <a href="#reviews" class="tabs-item">Рецензии</a>
+                        <a href="#premieres" class="tabs-item">Премьеры</a>
+                        <a href="#actors" class="tabs-item">Актеры</a>
+                        <a href="#awards" class="tabs-item">Награды</a>
+                        <a href="#facts" class="tabs-item">Факты</a>
+                        <a href="#sites" class="tabs-item">Сайты</a>
                         <a href="#" class="tabs-item">
                             <img src="./img/bookmark-icon.svg" alt="" class="bookmark-added">
                         </a>
                     </nav>
                     <div class="full-content">
-                        <div class="tabs-content">
+                        <div class="tabs-content visible" id="about">
                             <p class="text">Предстоящий американский супергеройский фильм, основанный на одноимённых комиксах издательства DC Comics. Картина будет
                             выпущена компанией Warner Bros. и будет перезагрузкой всех фильмов о Бэтмене.</p>
                             <p class="text">Фильм является десятым по счёту фильмом из Расширенной вселенной DC. Режиссёром и сценаристом фильма выступит Мэтт Ривз,
@@ -83,6 +85,24 @@
                             2016 года на одной из страниц Аффлека в социальных сетях был опубликован тестовый материал, в котором был показан
                             персонаж Детстроук. 8 сентября 2016 года Джефф Джонс подтвердил, что Джо Манганьелло сыграет наёмника Слейда Уилсона,
                             который, возможно, станет главным злодеем фильма.</p> 
+                        </div>
+                        <div class="tabs-content" id="reviews">
+                            <p>Тут скоро появятся рецензии</p>
+                        </div>
+                        <div class="tabs-content" id="premieres">
+                            <p>Тут скоро появятся премьеры</p>
+                        </div>
+                        <div class="tabs-content" id="actors">
+                            <p>Тут скоро появятся актеры</p>
+                        </div>
+                        <div class="tabs-content" id="awards">
+                            <p>Тут скоро появятся награды</p>
+                        </div>
+                        <div class="tabs-content" id="facts">
+                            <p>Тут скоро появятся факты</p>
+                        </div>
+                        <div class="tabs-content" id="sites">
+                            <p>Тут скоро появятся сайты</p>
                         </div>
                         <div class="subscribe">
                             <h3 class="subscribe-title">Подпишитесь на обновления</h3>
@@ -104,5 +124,10 @@
         </main>
     </div>
     <!-- /.container -->
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/main.js"></script>
+
 </body>
 </html>
